@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hamburger-menu{
+    width: 25px;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+.youtube-logo{
+    width: 100px;
+}
+
+.Search{
+    width: 300px ;
+}
+
+.search-icon{
+    width: 30px;
+}
+
+.voice-search-icon{
+    width: 30px;
+}
+
+.upload{
+    width: 30px;
+}
+
+.youtube-apps{
+    width: 25px;
+}
+
+.notifications{
+    width: 25px;
+}
+
+.my-channel{
+}

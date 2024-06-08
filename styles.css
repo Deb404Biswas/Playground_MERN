@@ -1,20 +1,42 @@
-.vthumnail{
+.v-preview{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.v-thumbnail{
     width: 400px;
 }
-.chcover{
-    border-radius: 50px;
-    width: 50px;
-}
-.vtitle{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-}
-.chname{
+.v-info{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
     margin-top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(96, 96, 96);
 }
-.vinfo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(96, 96, 96);
+.ch-cover{
+    display: inline-block;
+    margin-right: 12px;
+}
+.v-cover-pic{
+    border-radius: 50px;
+    width:45px;
+}
+
+.v-info-text{
+    display: inline-block;
+    width: 400px;
+}
+.v-title{
+    margin:0;
+    margin-bottom: 12px;
+    font-weight: 650;
+}
+.v-author{
+    margin:0;
+    margin-bottom: 2px;
+    color: rgb(91, 91, 91);
+}
+.v-stats{
+    margin: 0;
+    color :rgb(91, 91, 91)
 }
