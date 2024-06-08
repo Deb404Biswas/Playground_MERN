@@ -1,0 +1,20 @@
+.vthumnail{
+    width: 400px;
+}
+.chcover{
+    border-radius: 50px;
+    width: 50px;
+}
+.vtitle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.chname{
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(96, 96, 96);
+}
+.vinfo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(96, 96, 96);
+}
