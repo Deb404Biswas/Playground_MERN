@@ -1,0 +1,50 @@
+.sidebar{
+    background-color:white;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top:72px;
+    padding-top: 15px;
+    align-items: center;
+
+}
+.home{
+    width: 24px;
+    margin-bottom:;
+}
+.home:hover{
+
+}
+.explore{
+    width: 24px;
+}
+.explore:hover{
+    
+}
+.subscriptions{
+    width: 24px;
+}
+.subscriptions:hover{
+    
+}
+.originals{
+    width: 24px;
+}
+.originals:hover{
+    
+}
+.youtube-music{
+    width: 24px;
+}
+.youtube-music:hover{
+    
+}
+.library{
+    width: 24px;
+}
+.library:hover{
+    
+}

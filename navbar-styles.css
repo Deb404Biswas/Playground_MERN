@@ -29,6 +29,8 @@
     right: 0;
     background-color: white;
     border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(234, 234, 234);
 }
 
 
@@ -60,7 +62,7 @@
 
 .search-icon-button{
     width:64px;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(234, 232, 232);
     border: 1px solid rgb(217, 208, 208);
     margin-left: -1px;
 }
@@ -76,6 +78,7 @@
     border-radius: 50%;
     padding-top: 3px;
     padding-bottom: 3px;
+    background-color:rgb(240, 240, 240);
 }
 .voice-search-icon{
     width: 24px
