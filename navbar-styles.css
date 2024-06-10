@@ -1,14 +1,25 @@
+.right-section{
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: aqua;
 }
 
-.hamburger-menu{
+
+.hamburger-menu-icon{
     width: 25px;
-    margin-left: 15px;
-    margin-right: 25px;
+    margin: 0 15px 0 15px;
 }
 
 .youtube-logo{
@@ -16,11 +27,16 @@
 }
 
 .Search{
-    width: 300px ;
+    width: 350px ;
+    height: 35px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(217, 208, 208);
 }
 
 .search-icon{
-    width: 30px;
+    width: 36px;
 }
 
 .voice-search-icon{
@@ -40,4 +56,5 @@
 }
 
 .my-channel{
+    width:30px;
 }
