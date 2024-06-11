@@ -1,50 +1,80 @@
 .sidebar{
     background-color:white;
-    width: 64px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     position: fixed;
+    align-items: center;
     bottom: 0;
     left: 0;
     top:72px;
     padding-top: 15px;
-    align-items: center;
-
+    text-align: center;
+    
+}
+p{
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.home-img{
+    width: 24px;
 }
 .home{
-    width: 24px;
-    margin-bottom:;
+    width: 100%;
 }
 .home:hover{
-
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+.explore-img{
+    width: 24px;
 }
 .explore{
-    width: 24px;
+    width: 100%;
 }
 .explore:hover{
-    
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+.subscriptions-img{
+    width: 24px;
 }
 .subscriptions{
-    width: 24px;
+    width: 100%;
 }
 .subscriptions:hover{
-    
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+.originals-img{
+    width: 24px;
 }
 .originals{
-    width: 24px;
+    width: 100%;
 }
 .originals:hover{
-    
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+.youtube-music-img{
+    width: 24px;
 }
 .youtube-music{
-    width: 24px;
+    width: 100%;
 }
 .youtube-music:hover{
-    
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
 }
-.library{
+.library-img{
     width: 24px;
 }
+.library{
+    width: 100%;
+}
 .library:hover{
-    
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
 }
