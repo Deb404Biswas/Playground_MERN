@@ -5,11 +5,44 @@
     <title>DOM_exercises</title>
 </head>
 <body>
+    <style>
+        .sty-btn{
+            color: whitesmoke;
+            border: none ;
+            background-color: black;
+            font-weight: bold;
+            border-radius: 20px;
+            padding-left: 12.5px ;
+            padding-right: 12.5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+        .is-sub{
+            background-color: rgb(218, 218, 218);
+            color: black;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .cost-input{
+            padding: 5px;
+            font-size: 15px;
+        }
+        .js-calculate{
+            border: none;
+            background-color: green;
+            color:whitesmoke;
+            padding: 9px 10px;
+            padding-bottom: 7px;
+        }
+    </style>
     <p>YouTube Subscribe button</p>
     <button onclick="
     console.log('button has been clicked');
     subscribe();
-    " class="js-btn">Subscribe</button>
+    " class="js-btn sty-btn">Subscribe</button>
 
     <p>Amazon Shipping Calculator</p>
     <input placeholder="Cost of order" class="cost-input" onkeydown="
@@ -28,11 +61,13 @@
             {
                 document.querySelector('.js-btn').innerHTML='Subscribed'
                 btnele=document.querySelector('.js-btn').innerHTML;
+                document.querySelector('.js-btn').classList.add('is-sub');
             }
             else
             {
                 document.querySelector('.js-btn').innerHTML='Subscribe';
                 btnele=document.querySelector('.js-btn').innerHTML
+                document.querySelector('.js-btn').classList.remove('is-sub');
             }
             console.log('Now the button shows',btnele);
         }
