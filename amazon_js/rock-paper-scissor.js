@@ -28,7 +28,7 @@ function paper_clicked(){
         score.lose++;
 }
 
-function scissor_clicked(){
+function scissors_clicked(){
     randomValue()
     console.log(`The computer choose ${res}`)
     if(res=='rock')
