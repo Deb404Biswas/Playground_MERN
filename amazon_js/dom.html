@@ -5,39 +5,7 @@
     <title>DOM_exercises</title>
 </head>
 <body>
-    <style>
-        .sty-btn{
-            color: whitesmoke;
-            border: none ;
-            background-color: black;
-            font-weight: bold;
-            border-radius: 20px;
-            padding-left: 12.5px ;
-            padding-right: 12.5px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            cursor: pointer;
-            margin-bottom: 30px;
-        }
-        .is-sub{
-            background-color: rgb(218, 218, 218);
-            color: black;
-        }
-        p{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .cost-input{
-            padding: 5px;
-            font-size: 15px;
-        }
-        .js-calculate{
-            border: none;
-            background-color: green;
-            color:whitesmoke;
-            padding: 9px 10px;
-            padding-bottom: 7px;
-        }
-    </style>
+    <link rel="stylesheet" href="./dom.css">
     <p>YouTube Subscribe button</p>
     <button onclick="
     console.log('button has been clicked');
@@ -52,47 +20,6 @@
     calculate();
     " class="js-calculate">Calculate</button>
     <p class="js-tcost"></p>
-    <script>
-        function subscribe()
-        {
-            let btnele= document.querySelector('.js-btn').innerHTML;
-            console.log('At the moment of being clicked the button is ',btnele)
-            if(btnele==='Subscribe')
-            {
-                document.querySelector('.js-btn').innerHTML='Subscribed'
-                btnele=document.querySelector('.js-btn').innerHTML;
-                document.querySelector('.js-btn').classList.add('is-sub');
-            }
-            else
-            {
-                document.querySelector('.js-btn').innerHTML='Subscribe';
-                btnele=document.querySelector('.js-btn').innerHTML
-                document.querySelector('.js-btn').classList.remove('is-sub');
-            }
-            console.log('Now the button shows',btnele);
-        }
-
-
-        function calculate()
-        {
-            const cost= document.querySelector('.cost-input').value;
-            let tcost=0;
-            console.log('The cost of order is', cost);
-            if (cost < 40)
-            {
-                tcost=Number(cost)+10;
-            }
-            else
-            tcost=cost;
-        console.log('The total cost is',tcost);
-        document.querySelector('.js-tcost').innerHTML=`$${tcost}`;
-        }
-
-        function keydown(event)
-        {
-            if(event.key === 'Enter')
-            calculate();
-        }
-    </script>
+    <script src="./dom.js"></script>
 </body>
 </html>
