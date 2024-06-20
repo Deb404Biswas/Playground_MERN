@@ -56,3 +56,5 @@ function randomValue(){
     else if (ranNo>=0.66 && ranNo<=1)
         res='sissors'
 }
+
+document.querySelector('.js-score').innerHTML=`Win : ${score.win}, Lose: ${score.lose}, Tie: ${score.tie}`
