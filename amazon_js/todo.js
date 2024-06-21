@@ -1,7 +1,4 @@
-let tasks=[{
-    task:'',
-    date:''
-}];
+let tasks=[];
 let displayhtml=''
 function todo()
 {
@@ -19,26 +16,35 @@ function todo()
     );
     console.log(tasks);
     inputEle.value="";
+    display_task();
+};
+
+function deletetask(i){
+    tasks.splice(i,1);
+    console.log(tasks);
+    display_task();
+}
+function display_task(){
     for(let i=0;i<tasks.length;i++)
         {
             const eletask=tasks[i].task;
             const eledate=tasks[i].date;
             let html=`
-            <p>${eletask}   ${eledate}</p>
-            <button onclick="deleteToDo(${i})">Delete</button>
+            <div class="css-task-display">
+            <div>${eletask}</div> 
+            <div>${eledate}</div> 
+            <button class="css-delete-btn" onclick="deletetask(${i})">Delete</button>
+            </div>
             `;
             console.log(html);
             displayhtml+=html;  
             document.querySelector('.js-display').innerHTML=displayhtml; 
         }
         displayhtml=''
-};
-
-function deleteToDo(i)
-{
-    tasks.slice(i,1)
-    console.log(tasks)
+        console.log(tasks)
 }
+
+
 
 
 
